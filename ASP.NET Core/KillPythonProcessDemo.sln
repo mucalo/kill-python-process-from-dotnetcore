@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KillPythonProcessDemo", "KillPythonProcessDemo\KillPythonProcessDemo.csproj", "{F7319E66-6102-43F8-89F8-16394F77E1A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7319E66-6102-43F8-89F8-16394F77E1A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7319E66-6102-43F8-89F8-16394F77E1A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7319E66-6102-43F8-89F8-16394F77E1A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7319E66-6102-43F8-89F8-16394F77E1A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE3C5C53-A90A-43D4-BFBE-342C81AC83B2}
+	EndGlobalSection
+EndGlobal

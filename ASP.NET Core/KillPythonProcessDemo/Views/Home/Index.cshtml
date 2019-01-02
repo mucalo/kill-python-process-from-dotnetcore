@@ -1,0 +1,44 @@
+﻿@model List<KillPythonProcessDemo.Models.ProcessModel>
+
+<form method="POST">
+    <h1>Kill Python Project Demo</h1>
+
+    <button type="submit" formaction=@Url.Action("NewProcess")>Start new process</button>
+    
+
+    <h2>Processes</h2>
+    @if (Model != null && Model.Count > 0)
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th>System process ID</th>
+                    <th>Filename</th>
+                    <th>Controls</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var process in Model)
+                {
+                <tr>
+                    <td>
+                        @process.SystemProcessId
+                    </td>
+                    <td>
+                        @process.FileName
+                    </td>
+                    <td>
+                        @{ string url = String.Format("KillProcess/{0}", process.SystemProcessId); }
+                        <button type="submit" formaction=@Url.Action(url)>Kill process</button>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No processes started yet.</p>
+    }
+</form>
